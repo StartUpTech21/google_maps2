@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps2/main.dart';
 
-import 'setting.dart';
-
 class DrawerScreen extends StatefulWidget {
   const DrawerScreen({Key? key}) : super(key: key);
 
@@ -31,15 +29,15 @@ class DrawerScreenState extends State<DrawerScreen> {
               ),
             ),
           ),
-          DrawerListTile(
-            iconData: Icons.group,
-            title: "Setting",
-            onTilePressed: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (BuildContext context) => const Setting(),
-              ),
-            ),
-          ),
+          // DrawerListTile(
+          //   iconData: Icons.group,
+          //   title: "Setting",
+          //   onTilePressed: () => Navigator.of(context).push(
+          //     MaterialPageRoute(
+          //       builder: (BuildContext context) => const Setting(),
+          //     ),
+          //   ),
+          // ),
           DrawerListTile(
             iconData: Icons.notifications,
             title: "New Channel Chat",

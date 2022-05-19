@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-// ignore: import_of_legacy_library_into_null_safe, unused_import
-// import 'package:permission_handler/permission_handler.dart';
 
 import 'Drawer.dart';
-import 'setting.dart';
 
 void main() {
   runApp(const MaterialApp(

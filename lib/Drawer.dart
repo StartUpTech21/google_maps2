@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps2/main.dart';
 
 import 'setting.dart';
 
@@ -22,6 +23,15 @@ class DrawerScreenState extends State<DrawerScreen> {
             accountEmail: Text("widiarrohman1234@gmail.com"),
           ),
           DrawerListTile(
+            iconData: Icons.lock,
+            title: "Home",
+            onTilePressed: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => const MyApp(),
+              ),
+            ),
+          ),
+          DrawerListTile(
             iconData: Icons.group,
             title: "Setting",
             onTilePressed: () => Navigator.of(context).push(
@@ -29,11 +39,6 @@ class DrawerScreenState extends State<DrawerScreen> {
                 builder: (BuildContext context) => const Setting(),
               ),
             ),
-          ),
-          DrawerListTile(
-            iconData: Icons.lock,
-            title: "New Secret Group",
-            onTilePressed: () {},
           ),
           DrawerListTile(
             iconData: Icons.notifications,

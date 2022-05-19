@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps2/main.dart';
 
+import 'setting.dart';
+
 class DrawerScreen extends StatefulWidget {
   const DrawerScreen({Key? key}) : super(key: key);
 
